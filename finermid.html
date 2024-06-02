@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Background</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: linear-gradient(to bottom right, #450a2b, #0e0d0d);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .ima {
+            position: absolute;
+            top: 50%;
+            left: 30%;
+            transform: translate(-50%, -50%);
+            width: 60%;
+            max-width: 800px;
+            z-index: 1;
+        }
+        .title-container {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            margin-top: -600px;
+        }
+        .title-container h1 {
+            font-size: 8rem;
+            margin: 1rem;
+            background: linear-gradient(to bottom, #e1ac4c, #c0882d);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .title-container p {
+            font-size: 2rem;
+            margin: 0.5rem;
+            background: linear-gradient(to bottom, #ffffff, #cccccc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .stars {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 20%, transparent 20%);
+            background-size: 50px 50px;
+            z-index: 0;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            position: absolute;
+            bottom: 100px;
+            right: 200px;
+        }
+        .button {
+            margin: 10px;
+            padding: 40px 80px;
+            font-size: 36px;
+            color: white;
+            background-color: #ffcc00;
+            border: 2px solid #8b4513;
+            border-radius: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+            background-image: linear-gradient(to bottom, #ffcc00, #ff9900);
+            box-shadow: 0 5px #8b4513;
+        }
+        .button:hover {
+            background-image: linear-gradient(to bottom, #ffcc00, #e68a00);
+        }
+        .button:active {
+            box-shadow: 0 2px #8b4513;
+            transform: translateY(4px);
+        }
+    </style>
+</head>
+<body>
+    <div class="stars"></div>
+    <img src="2.webp" alt="ima" class="ima">
+    <div class="title-container">
+        <h1>澳門最大線上賭場</h1>
+        <p>美女荷官線上發牌</p>
+    </div>
+    <div class="button-container">
+        <a href="百家樂/test.html" class="button">百家樂</a>
+        <a href="21點/21.html" class="button">21點</a>
+    </div>
+</body>
+</html>
